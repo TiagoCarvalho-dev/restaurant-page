@@ -1,4 +1,4 @@
-function buildHeader() {
+export function buildHeader() {
   const header = document.createElement('header');
   const h1 = document.createElement('h1');
   h1.textContent = 'Ursonesca';
@@ -7,7 +7,7 @@ function buildHeader() {
   return header;
 }
 
-function buildNav() {
+export function buildNav() {
   const nav = document.createElement('nav');
 
   const homeButton = document.createElement('button');
@@ -29,13 +29,12 @@ function buildNav() {
   return nav;
 }
 
-function buildMain() {
+function buildMainHome() {
   const mainDiv = document.createElement('div');
   mainDiv.classList.add('main');
 
   const h2 = document.createElement('h2');
   h2.textContent = 'A lot of stuff will go here';
-
   mainDiv.appendChild(h2);
 
   const scheduleDiv = document.createElement('div');
@@ -75,7 +74,7 @@ function buildMain() {
   return mainDiv;
 }
 
-function buildFooter() {
+export function buildFooter() {
   const footer = document.createElement('div');
   footer.classList.add('footer');
 
@@ -106,12 +105,10 @@ function buildFooter() {
   return footer;
 }
 
-function buildHomePage() {
+export default function buildHomePage() {
   const content = document.querySelector('#content');
   content.appendChild(buildHeader());
   content.appendChild(buildNav());
-  content.appendChild(buildMain());
+  content.appendChild(buildMainHome());
   content.appendChild(buildFooter());
 }
-
-export default buildHomePage;

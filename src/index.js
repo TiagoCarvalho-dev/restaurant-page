@@ -1,4 +1,7 @@
-import "./style.css"
-import buildHomePage from "./home.js"
+import "./style.css";
+import buildHomePage from "./home.js";
+import buildMenuPage from "./menu.js";
 
-buildHomePage();
+
+// buildHomePage();
+buildMenuPage();
