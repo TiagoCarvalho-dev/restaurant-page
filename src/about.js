@@ -5,7 +5,7 @@ function buildMainAbout() {
   mainDiv.classList.add('main');
 
   const h2 = document.createElement('h2');
-  h2.textContent = 'A lot of stuff will go here';
+  h2.textContent = 'Something about the restaurant here.';
   mainDiv.appendChild(h2);
 
   const scheduleDiv = document.createElement('div');

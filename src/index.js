@@ -1,13 +1,22 @@
 import "./style.css";
+import buildHomePage from "./home.js";
 import buildAboutPage from "./about.js";
 import buildMenuPage from "./menu.js";
 import buildContactPage from "./contact.js";
 
 export function buildHeader() {
   const header = document.createElement('header');
-  const h1 = document.createElement('h1');
-  h1.textContent = 'Ursonesca';
-  header.appendChild(h1);
+  const titleButton = document.createElement('button');
+  titleButton.textContent = 'Ursonesca';
+  header.appendChild(titleButton);
+
+  titleButton.addEventListener('click', () => {
+    clearDOM();
+    buildHomePage();
+    document.querySelector('.about-button').classList.remove('active-tab');
+    document.querySelector('.menu-button').classList.remove('active-tab');
+    document.querySelector('.contact-button').classList.remove('active-tab');
+  })
 
   return header;
 }
@@ -96,4 +105,4 @@ function clearDOM() {
   }
 }
 
-buildAboutPage();
+buildHomePage();
