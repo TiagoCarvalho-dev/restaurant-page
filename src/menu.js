@@ -28,10 +28,10 @@ function buildMainMenu() {
   breakfast1H4.textContent = 'Waffles';
 
   const breakfast1PIng = document.createElement('p');
-  breakfast1PIng.textContent = 'Ingredients here';
+  breakfast1PIng.textContent = 'These waffles are lovely and crispy. Perfect for any day of the week!';
   
   const breakfast1PPrice = document.createElement('p');
-  breakfast1PPrice.textContent = '$Price';
+  breakfast1PPrice.textContent = '$5.00';
 
   breakfast1Div.appendChild(breakfast1Img);
   breakfast1Div.appendChild(breakfast1H4);
@@ -51,10 +51,10 @@ function buildMainMenu() {
   breakfast2H4.textContent = 'Pancakes';
 
   const breakfast2PIng = document.createElement('p');
-  breakfast2PIng.textContent = 'Ingredients here';
+  breakfast2PIng.textContent = 'Served with butter and syrup for a perfect breakfast.';
   
   const breakfast2PPrice = document.createElement('p');
-  breakfast2PPrice.textContent = '$Price';
+  breakfast2PPrice.textContent = '$7.00';
 
   breakfast2Div.appendChild(breakfast2Img);
   breakfast2Div.appendChild(breakfast2H4);
@@ -84,10 +84,10 @@ function buildMainMenu() {
   lunch1H4.textContent = 'Hot-Dog';
 
   const lunch1PIng = document.createElement('p');
-  lunch1PIng.textContent = 'Ingredients here';
+  lunch1PIng.textContent = 'Two simple yet delicious, mashed potato free, hot-dog. Just as it was meant to be.';
   
   const lunch1PPrice = document.createElement('p');
-  lunch1PPrice.textContent = '$Price';
+  lunch1PPrice.textContent = '$15.00';
 
   lunch1Div.appendChild(lunch1Img);
   lunch1Div.appendChild(lunch1H4);
@@ -107,7 +107,7 @@ function buildMainMenu() {
   lunch2H4.textContent = 'Pasta';
 
   const lunch2PIng = document.createElement('p');
-  lunch2PIng.textContent = 'Ingredients here';
+  lunch2PIng.textContent = 'Shrimp scampi with linguine is the ultimate seafood pasta dish.';
   
   const lunch2PPrice = document.createElement('p');
   lunch2PPrice.textContent = '$Price';
@@ -140,10 +140,10 @@ function buildMainMenu() {
   dinner1H4.textContent = 'Pizza';
 
   const dinner1PIng = document.createElement('p');
-  dinner1PIng.textContent = 'Ingredients here';
+  dinner1PIng.textContent = 'The Ursonesca\'s signature pizza that gave us the michelin star.';
   
   const dinner1PPrice = document.createElement('p');
-  dinner1PPrice.textContent = '$Price';
+  dinner1PPrice.textContent = '$25.00';
 
   dinner1Div.appendChild(dinner1Img);
   dinner1Div.appendChild(dinner1H4);
@@ -163,10 +163,10 @@ function buildMainMenu() {
   dinner2H4.textContent = 'Sandwich';
 
   const dinner2PIng = document.createElement('p');
-  dinner2PIng.textContent = 'Ingredients here';
+  dinner2PIng.textContent = 'An Indiana pork tenderloin sandwich consists of bread, fried pork, lettuce, tomatoes, and basic condiments.';
   
   const dinner2PPrice = document.createElement('p');
-  dinner2PPrice.textContent = '$Price';
+  dinner2PPrice.textContent = '$24.00';
 
   dinner2Div.appendChild(dinner2Img);
   dinner2Div.appendChild(dinner2H4);

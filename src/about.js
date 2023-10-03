@@ -5,7 +5,7 @@ function buildMainAbout() {
   mainDiv.classList.add('main');
 
   const h2 = document.createElement('h2');
-  h2.textContent = 'Something about the restaurant here.';
+  h2.textContent = 'Serving great food, for great people, since 2023.';
   mainDiv.appendChild(h2);
 
   const scheduleDiv = document.createElement('div');
@@ -15,29 +15,20 @@ function buildMainAbout() {
 
   const hoursLi = document.createElement('li');
   hoursLi.textContent = 'Hours';
-  const mondayLi = document.createElement('li');
-  mondayLi.textContent = 'Monday';
-  const tuesdayLi = document.createElement('li');
-  tuesdayLi.textContent = 'Tuesday';
-  const wednesdayLi = document.createElement('li');
-  wednesdayLi.textContent = 'Wednesday';
-  const thursdayLi = document.createElement('li');
-  thursdayLi.textContent = 'Thursday';
-  const fridayLi = document.createElement('li');
-  fridayLi.textContent = 'Friday';
-  const saturdayLi = document.createElement('li');
-  saturdayLi.textContent = 'Saturday';
-  const sundayLi = document.createElement('li');
-  sundayLi.textContent = 'Sunday';
+  const breakfastLi = document.createElement('li');
+  breakfastLi.textContent = 'Breakfast - from 6:00AM to 9:00AM';
+  const lunchLi = document.createElement('li');
+  lunchLi.textContent = 'Lunch - from 10:30AM to 2:00PM';
+  const dinnerLi = document.createElement('li');
+  dinnerLi.textContent = 'Dinner - from 7:00PM to 23:30PM';
+  const weekendsLi = document.createElement('li');
+  weekendsLi.textContent = 'Weekends - from 6:00AM to 23:30PM';
 
   ul.appendChild(hoursLi);
-  ul.appendChild(mondayLi);
-  ul.appendChild(tuesdayLi);
-  ul.appendChild(wednesdayLi);
-  ul.appendChild(thursdayLi);
-  ul.appendChild(fridayLi);
-  ul.appendChild(saturdayLi);
-  ul.appendChild(sundayLi);
+  ul.appendChild(breakfastLi);
+  ul.appendChild(lunchLi);
+  ul.appendChild(dinnerLi);
+  ul.appendChild(weekendsLi);
 
   scheduleDiv.appendChild(ul);
   mainDiv.appendChild(scheduleDiv);

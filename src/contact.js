@@ -11,7 +11,7 @@ function buildMainContact() {
   reservationH2.textContent = 'RESERVATIONS';
 
   const reservationP = document.createElement('p');
-  reservationP.textContent = 'Random phone number here!'
+  reservationP.textContent = '+55 (19)12345-6789 - Josh';
 
   reservationDiv.appendChild(reservationH2);
   reservationDiv.appendChild(reservationP);
@@ -23,7 +23,7 @@ function buildMainContact() {
   suggestionsH2.textContent = 'SUGGESTIONS';
 
   const suggestionsP = document.createElement('p');
-  suggestionsP.textContent = 'Another random phone number here!'
+  suggestionsP.textContent = 'ursonesca@somewhere.com - Veronica';
 
   suggestionsDiv.appendChild(suggestionsH2);
   suggestionsDiv.appendChild(suggestionsP);
@@ -35,7 +35,7 @@ function buildMainContact() {
   addressH2.textContent = 'ADDRESS';
 
   const addressP = document.createElement('p');
-  addressP.textContent = 'Random address here!'
+  addressP.textContent = '5331 Rexford Court, Montgomery AL 36116'
 
   addressDiv.appendChild(addressH2);
   addressDiv.appendChild(addressP);
