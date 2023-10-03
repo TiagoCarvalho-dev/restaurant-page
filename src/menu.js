@@ -1,4 +1,4 @@
-import { buildHeader, buildNav, buildFooter } from "./home.js";
+import { buildHeader, buildNav, buildFooter } from "./index.js";
 
 function buildMainMenu() {
   const mainDiv = document.createElement('div');
