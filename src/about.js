@@ -1,6 +1,6 @@
 import { buildHeader, buildNav, buildFooter } from "./index.js";
 
-function buildMainHome() {
+function buildMainAbout() {
   const mainDiv = document.createElement('div');
   mainDiv.classList.add('main');
 
@@ -45,10 +45,10 @@ function buildMainHome() {
   return mainDiv;
 }
 
-export default function buildHomePage() {
+export default function buildAboutPage() {
   const content = document.querySelector('#content');
   content.appendChild(buildHeader());
   content.appendChild(buildNav());
-  content.appendChild(buildMainHome());
+  content.appendChild(buildMainAbout());
   content.appendChild(buildFooter());
 }

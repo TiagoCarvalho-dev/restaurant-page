@@ -1,5 +1,5 @@
 import "./style.css";
-import buildHomePage from "./home.js";
+import buildAboutPage from "./about.js";
 import buildMenuPage from "./menu.js";
 import buildContactPage from "./contact.js";
 
@@ -15,9 +15,9 @@ export function buildHeader() {
 export function buildNav() {
   const nav = document.createElement('nav');
 
-  const homeButton = document.createElement('button');
-  homeButton.classList.add('home-button');
-  homeButton.textContent = 'HOME';
+  const aboutButton = document.createElement('button');
+  aboutButton.classList.add('about-button');
+  aboutButton.textContent = 'ABOUT';
 
   const menuButton = document.createElement('button');
   menuButton.classList.add('menu-button');
@@ -27,23 +27,32 @@ export function buildNav() {
   contactButton.classList.add('contact-button');
   contactButton.textContent = 'CONTACT';
 
-  nav.appendChild(homeButton);
+  nav.appendChild(aboutButton);
   nav.appendChild(menuButton);
   nav.appendChild(contactButton);
 
-  homeButton.addEventListener('click', () => {
+  aboutButton.addEventListener('click', () => {
     clearDOM();
-    buildHomePage();
+    buildAboutPage();
+    document.querySelector('.about-button').classList.add('active-tab');
+    document.querySelector('.menu-button').classList.remove('active-tab');
+    document.querySelector('.contact-button').classList.remove('active-tab');
   });
 
   menuButton.addEventListener('click', () => {
     clearDOM();
     buildMenuPage();
+    document.querySelector('.about-button').classList.remove('active-tab');
+    document.querySelector('.menu-button').classList.add('active-tab');
+    document.querySelector('.contact-button').classList.remove('active-tab');
   });
 
   contactButton.addEventListener('click', () => {
     clearDOM();
     buildContactPage();
+    document.querySelector('.about-button').classList.remove('active-tab');
+    document.querySelector('.menu-button').classList.remove('active-tab');
+    document.querySelector('.contact-button').classList.add('active-tab');
   });
 
   return nav;
@@ -87,4 +96,4 @@ function clearDOM() {
   }
 }
 
-buildHomePage();
+buildAboutPage();
