@@ -2,7 +2,7 @@ import { buildHeader, buildNav, buildFooter } from "./index.js";
 
 function buildMainMenu() {
   const mainDiv = document.createElement('div');
-  mainDiv.classList.add('main-page');
+  mainDiv.classList.add('main');
 
   const titleH2 = document.createElement('h2');
   titleH2.textContent = 'MENU';
@@ -21,8 +21,8 @@ function buildMainMenu() {
   const breakfast1Img = document.createElement('img');
   breakfast1Img.setAttribute('src', '../src/images/waffles.jpg');
   breakfast1Img.setAttribute('alt', 'Waffles');
-  breakfast1Img.setAttribute('width', '50px');
-  breakfast1Img.setAttribute('height', '50px');
+  breakfast1Img.setAttribute('width', '130px');
+  breakfast1Img.setAttribute('height', '130px');
 
   const breakfast1H4 = document.createElement('h4');
   breakfast1H4.textContent = 'Waffles';
@@ -44,8 +44,8 @@ function buildMainMenu() {
   const breakfast2Img = document.createElement('img');
   breakfast2Img.setAttribute('src', '../src/images/pancakes.jpg');
   breakfast2Img.setAttribute('alt', 'Pancakes');
-  breakfast2Img.setAttribute('width', '50px');
-  breakfast2Img.setAttribute('height', '50px');
+  breakfast2Img.setAttribute('width', '130px');
+  breakfast2Img.setAttribute('height', '130px');
 
   const breakfast2H4 = document.createElement('h4');
   breakfast2H4.textContent = 'Pancakes';
@@ -77,8 +77,8 @@ function buildMainMenu() {
   const lunch1Img = document.createElement('img');
   lunch1Img.setAttribute('src', '../src/images/hotdog.jpg');
   lunch1Img.setAttribute('alt', 'Hot-Dog');
-  lunch1Img.setAttribute('width', '50px');
-  lunch1Img.setAttribute('height', '50px');
+  lunch1Img.setAttribute('width', '130px');
+  lunch1Img.setAttribute('height', '130px');
 
   const lunch1H4 = document.createElement('h4');
   lunch1H4.textContent = 'Hot-Dog';
@@ -100,8 +100,8 @@ function buildMainMenu() {
   const lunch2Img = document.createElement('img');
   lunch2Img.setAttribute('src', '../src/images/pasta.jpg');
   lunch2Img.setAttribute('alt', 'Pasta');
-  lunch2Img.setAttribute('width', '50px');
-  lunch2Img.setAttribute('height', '50px');
+  lunch2Img.setAttribute('width', '130px');
+  lunch2Img.setAttribute('height', '130px');
 
   const lunch2H4 = document.createElement('h4');
   lunch2H4.textContent = 'Pasta';
@@ -133,8 +133,8 @@ function buildMainMenu() {
   const dinner1Img = document.createElement('img');
   dinner1Img.setAttribute('src', '../src/images/pizza.jpg');
   dinner1Img.setAttribute('alt', 'Pizza');
-  dinner1Img.setAttribute('width', '50px');
-  dinner1Img.setAttribute('height', '50px');
+  dinner1Img.setAttribute('width', '130px');
+  dinner1Img.setAttribute('height', '130px');
 
   const dinner1H4 = document.createElement('h4');
   dinner1H4.textContent = 'Pizza';
@@ -156,8 +156,8 @@ function buildMainMenu() {
   const dinner2Img = document.createElement('img');
   dinner2Img.setAttribute('src', '../src/images/sandwich.jpg');
   dinner2Img.setAttribute('alt', 'Sandwich');
-  dinner2Img.setAttribute('width', '50px');
-  dinner2Img.setAttribute('height', '50px');
+  dinner2Img.setAttribute('width', '130px');
+  dinner2Img.setAttribute('height', '130px');
 
   const dinner2H4 = document.createElement('h4');
   dinner2H4.textContent = 'Sandwich';

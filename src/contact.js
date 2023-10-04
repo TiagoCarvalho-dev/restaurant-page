@@ -2,7 +2,7 @@ import { buildHeader, buildNav, buildFooter } from "./index.js";
 
 function buildMainContact() {
   const mainDiv = document.createElement('div');
-  mainDiv.classList.add('main-page');
+  mainDiv.classList.add('main');
 
   const reservationDiv = document.createElement('div');
   reservationDiv.classList.add('reservation-container');

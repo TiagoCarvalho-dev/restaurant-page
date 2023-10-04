@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack serve --open"
+    "server": "webpack serve --open",
+    "watch": "webpack --watch"
   },
   "author": "Tiago de Siqueira Carvalho",
   "license": "ISC",

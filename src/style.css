@@ -70,6 +70,8 @@ nav > button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 35px;
+  margin: 30px;
 }
 
 .reviews-container {
@@ -87,8 +89,107 @@ nav > button {
   border-radius: 100%;
 }
 
-.active-tab {
-  border-bottom: solid 2px red;
+.main > h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.schedule-container {
+  text-align: center;
+}
+
+.schedule-container > h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+}
+
+.reservation-container,
+.suggestions-container,
+.address-container {
+  text-align: center;
+}
+
+.breakfast1,
+.breakfast2,
+.lunch1,
+.lunch2,
+.dinner1,
+.dinner2 {
+  display: grid;
+  grid-template-columns: 160px 5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.breakfast-container,
+.lunch-container,
+.dinner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.breakfast-container h3,
+.lunch-container h3,
+.dinner-container h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.breakfast-container img,
+.lunch-container img,
+.dinner-container img {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-radius: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
+.breakfast-container h4,
+.lunch-container h4,
+.dinner-container h4 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: start;
+  align-self: end;
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.breakfast-container p:nth-child(3),
+.lunch-container p:nth-child(3),
+.dinner-container p:nth-child(3) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: start;
+  align-self: start;
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.breakfast-container p:last-child,
+.lunch-container p:last-child,
+.dinner-container p:last-child {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  justify-self: center;
+  align-self: end;
+  margin: 0;
+  padding: 0;
 }
 
 .footer {
@@ -99,6 +200,10 @@ nav > button {
   margin-top: auto;
 }
 
+.active-tab {
+  border-bottom: solid 2px red;
+}
+
 /* * {
-  border: solid 2px red;
+  border: solid 1px red;
 } */
