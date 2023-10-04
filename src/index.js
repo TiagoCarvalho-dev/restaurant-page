@@ -16,7 +16,7 @@ export function buildHeader() {
     document.querySelector('.about-button').classList.remove('active-tab');
     document.querySelector('.menu-button').classList.remove('active-tab');
     document.querySelector('.contact-button').classList.remove('active-tab');
-  })
+  });
 
   return header;
 }

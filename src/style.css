@@ -1,7 +1,104 @@
+@font-face {
+  font-family: 'PicturamaFounder';
+  src: url('./fonts/picturamafounder.otf');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./fonts/coolvetica.otf');
+}
+
 :root {
-  background-color: gray;
+  font-family: 'Coolvetica';
+  --background-main: rgb(13, 18, 41);
+  --text-main: rgb(189, 189, 189);
+  --text-secondary: rgb(80, 165, 54);
+}
+
+body {
+  background-color: var(--background-main);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+  border-bottom: solid 2px white;
+  width: 100%;
+}
+
+header > button {
+  background-color: var(--background-main);
+  color: var(--text-main);
+  border: none;
+  cursor: pointer;
+  font-family: 'PicturamaFounder';
+  font-size: 6rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+nav > button {
+  font-family: 'Coolvetica';
+  font-size: 1.2rem;
+  background-color: var(--background-main);
+  color: var(--text-main);
+  cursor: pointer;
+  border: none;
+  border-bottom: solid 2px white;
+  width: 100px;
+  padding: 0.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-container {
+  text-align: center;
+  margin: 15px;
+}
+
+.main p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--text-main);
+}
+
+.main > img {
+  border-radius: 100%;
 }
 
 .active-tab {
-  background-color: blue;
+  border-bottom: solid 2px red;
 }
+
+.footer {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+/* * {
+  border: solid 2px red;
+} */
