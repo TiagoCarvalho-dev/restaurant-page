@@ -1,8 +1,5 @@
-import { buildHeader, buildNav, buildFooter } from "./index.js";
-
-function buildMainContact() {
-  const mainDiv = document.createElement('div');
-  mainDiv.classList.add('main');
+export default function buildMainContact() {
+  const mainDiv = document.querySelector('.main');
 
   const reservationDiv = document.createElement('div');
   reservationDiv.classList.add('reservation-container');
@@ -45,12 +42,4 @@ function buildMainContact() {
   mainDiv.appendChild(addressDiv);
 
   return mainDiv;
-}
-
-export default function buildContactPage() {
-  const content = document.querySelector('#content');
-  content.appendChild(buildHeader());
-  content.appendChild(buildNav());
-  content.appendChild(buildMainContact());
-  content.appendChild(buildFooter());
 }

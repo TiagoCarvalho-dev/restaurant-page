@@ -1,4 +1,3 @@
-import { buildHeader, buildNav, buildFooter } from "./index.js";
 import waffles from "./images/waffles.jpg";
 import pancakes from "./images/pancakes.jpg";
 import hotdog from "./images/hotdog.jpg";
@@ -6,9 +5,8 @@ import pasta from "./images/pasta.jpg";
 import pizza from "./images/pizza.jpg";
 import sandwich from "./images/sandwich.jpg";
 
-function buildMainMenu() {
-  const mainDiv = document.createElement('div');
-  mainDiv.classList.add('main');
+export default function buildMainMenu() {
+  const mainDiv = document.querySelector('.main');
 
   const breakfastDiv = document.createElement('div');
   breakfastDiv.classList.add('breakfast-container');
@@ -171,12 +169,4 @@ function buildMainMenu() {
   mainDiv.appendChild(dinnerDiv);
 
   return mainDiv;
-}
-
-export default function buildMenuPage() {
-  const content = document.querySelector('#content');
-  content.appendChild(buildHeader());
-  content.appendChild(buildNav());
-  content.appendChild(buildMainMenu());
-  content.appendChild(buildFooter());
 }

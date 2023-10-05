@@ -1,11 +1,10 @@
 import "./style.css";
-import buildHomePage from "./home.js";
-import buildAboutPage from "./about.js";
-import buildMenuPage from "./menu.js";
-import buildContactPage from "./contact.js";
+import buildMainAbout from "./about.js";
+import buildMainMenu from "./menu.js";
+import buildMainContact from "./contact.js";
 import gitHubLogo from "./images/github.svg";
 
-export function buildHeader() {
+function buildHeader() {
   const header = document.createElement('header');
   const titleH1 = document.createElement('h1');
   titleH1.textContent = 'Ursonesca';
@@ -14,11 +13,11 @@ export function buildHeader() {
   return header;
 }
 
-export function buildNav() {
+function buildNav() {
   const nav = document.createElement('nav');
 
   const aboutButton = document.createElement('button');
-  aboutButton.classList.add('about-button');
+  aboutButton.classList.add('about-button', 'active-tab');
   aboutButton.textContent = 'ABOUT';
 
   const menuButton = document.createElement('button');
@@ -34,24 +33,24 @@ export function buildNav() {
   nav.appendChild(contactButton);
 
   aboutButton.addEventListener('click', () => {
-    clearDOM();
-    buildAboutPage();
+    clearMainDiv();
+    buildMainAbout();
     document.querySelector('.about-button').classList.add('active-tab');
     document.querySelector('.menu-button').classList.remove('active-tab');
     document.querySelector('.contact-button').classList.remove('active-tab');
   });
 
   menuButton.addEventListener('click', () => {
-    clearDOM();
-    buildMenuPage();
+    clearMainDiv();
+    buildMainMenu();
     document.querySelector('.about-button').classList.remove('active-tab');
     document.querySelector('.menu-button').classList.add('active-tab');
     document.querySelector('.contact-button').classList.remove('active-tab');
   });
 
   contactButton.addEventListener('click', () => {
-    clearDOM();
-    buildContactPage();
+    clearMainDiv();
+    buildMainContact();
     document.querySelector('.about-button').classList.remove('active-tab');
     document.querySelector('.menu-button').classList.remove('active-tab');
     document.querySelector('.contact-button').classList.add('active-tab');
@@ -60,7 +59,14 @@ export function buildNav() {
   return nav;
 }
 
-export function buildFooter() {
+function buildMain() {
+  const mainDiv = document.createElement('div');
+  mainDiv.classList.add('main');
+
+  return mainDiv;
+}
+
+function buildFooter() {
   const footer = document.createElement('div');
   footer.classList.add('footer');
 
@@ -91,11 +97,20 @@ export function buildFooter() {
   return footer;
 }
 
-function clearDOM() {
-  const content = document.querySelector('#content');
-  while(content.firstChild) {
-    content.removeChild(content.lastChild);
+function clearMainDiv() {
+  const mainDiv = document.querySelector('.main');
+  while(mainDiv.firstChild) {
+    mainDiv.removeChild(mainDiv.lastChild);
   }
 }
 
-buildAboutPage();
+function buildOpeningPage() {
+  const content = document.querySelector('#content');
+  content.appendChild(buildHeader());
+  content.appendChild(buildNav());
+  content.appendChild(buildMain());
+  content.appendChild(buildMainAbout());
+  content.appendChild(buildFooter());
+}
+
+buildOpeningPage();

@@ -1,9 +1,7 @@
-import { buildHeader, buildNav, buildFooter } from "./index.js";
 import platesImage from "./images/plates.jpg";
 
-function buildMainAbout() {
-  const mainDiv = document.createElement('div');
-  mainDiv.classList.add('main');
+export default function buildMainAbout() {
+  const mainDiv = document.querySelector('.main');
 
   const reviewsDiv = document.createElement('div');
   reviewsDiv.classList.add('reviews-container');
@@ -27,12 +25,4 @@ function buildMainAbout() {
   mainDiv.appendChild(HomeImg);
 
   return mainDiv;
-}
-
-export default function buildAboutPage() {
-  const content = document.querySelector('#content');
-  content.appendChild(buildHeader());
-  content.appendChild(buildNav());
-  content.appendChild(buildMainAbout());
-  content.appendChild(buildFooter());
 }
