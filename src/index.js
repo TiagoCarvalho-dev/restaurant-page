@@ -3,6 +3,7 @@ import buildHomePage from "./home.js";
 import buildAboutPage from "./about.js";
 import buildMenuPage from "./menu.js";
 import buildContactPage from "./contact.js";
+import gitHubLogo from "./images/github.svg";
 
 export function buildHeader() {
   const header = document.createElement('header');
@@ -84,7 +85,7 @@ export function buildFooter() {
   a.setAttribute('href', 'https://github.com/TiagoCarvalho-dev');
 
   const img = document.createElement('img');
-  img.setAttribute('src', '../src/images/github.svg');
+  img.setAttribute('src', gitHubLogo);
   img.setAttribute('alt', 'Github Logo');
   img.setAttribute('width', '30px');
   img.setAttribute('height', 'auto');

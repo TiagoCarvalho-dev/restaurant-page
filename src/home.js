@@ -1,4 +1,5 @@
 import { buildHeader, buildNav, buildFooter } from "./index.js";
+import platesImage from "./images/plates.jpg";
 
 function buildMainHome() {
   const mainDiv = document.createElement('div');
@@ -19,10 +20,8 @@ function buildMainHome() {
   reviewsDiv.appendChild(p3);
 
   const HomeImg = document.createElement('img');
-  HomeImg.setAttribute('src', '../src/images/restaurant.jpg');
+  HomeImg.setAttribute('src', platesImage);
   HomeImg.setAttribute('alt', 'Ursonesca Restaurant');
-  HomeImg.setAttribute('width', '400px');
-  HomeImg.setAttribute('height', 'auto');
 
   mainDiv.appendChild(reviewsDiv);
   mainDiv.appendChild(HomeImg);

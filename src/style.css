@@ -10,13 +10,15 @@
 
 :root {
   font-family: 'Coolvetica';
-  --background-main: rgb(13, 18, 41);
+  --background-main: rgba(0, 0, 0, 0.849);
   --text-main: rgb(189, 189, 189);
   --text-secondary: rgba(223, 190, 0, 0.911);
 }
 
 body {
-  background-color: var(--background-main);
+  background-image: url('./images/restaurant.jpg');
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--text-main);
   margin: 0;
   padding: 0;
@@ -33,12 +35,12 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 7rem;
-  border-bottom: solid 2px white;
   width: 100%;
+  background-color: var(--background-main);
 }
 
 header > button {
-  background-color: var(--background-main);
+  background-color: transparent;
   color: var(--text-main);
   border: none;
   cursor: pointer;
@@ -51,13 +53,16 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 2px var(--text-main);
+  width: 100%;
+  background-color: var(--background-main);
 }
 
 nav > button {
   font-family: 'Coolvetica';
   font-size: 1.2rem;
-  background-color: var(--background-main);
+  background-color:transparent;
   color: var(--text-main);
   cursor: pointer;
   border: none;
@@ -72,7 +77,9 @@ nav > button {
   align-items: center;
   gap: 35px;
   margin: 30px;
-  max-width: 900px;
+  padding: 30px;
+  width: 60%;
+  background-color: var(--background-main);
 }
 
 .reviews-container {
@@ -88,6 +95,9 @@ nav > button {
 
 .main > img {
   border-radius: 100%;
+  width: 30%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .main > h2 {
@@ -148,6 +158,8 @@ nav > button {
   grid-column-start: 1;
   grid-column-end: 2;
   border-radius: 100%;
+  width: 130px;
+  height: 130px;
   justify-self: center;
   align-self: center;
 }
@@ -198,10 +210,14 @@ nav > button {
 
 .footer {
   font-size: 1.2rem;
+  border-top: solid 2px var(--text-main);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin-top: auto;
+  background-color: var(--background-main);
+  width: 100%;
 }
 
 .active-tab {
