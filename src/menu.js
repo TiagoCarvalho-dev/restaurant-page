@@ -4,10 +4,6 @@ function buildMainMenu() {
   const mainDiv = document.createElement('div');
   mainDiv.classList.add('main');
 
-  const titleH2 = document.createElement('h2');
-  titleH2.textContent = 'MENU';
-  mainDiv.appendChild(titleH2);
-
   const breakfastDiv = document.createElement('div');
   breakfastDiv.classList.add('breakfast-container');
 
@@ -110,7 +106,7 @@ function buildMainMenu() {
   lunch2PIng.textContent = 'Shrimp scampi with linguine is the ultimate seafood pasta dish.';
   
   const lunch2PPrice = document.createElement('p');
-  lunch2PPrice.textContent = '$Price';
+  lunch2PPrice.textContent = '$18.00';
 
   lunch2Div.appendChild(lunch2Img);
   lunch2Div.appendChild(lunch2H4);
