@@ -7,17 +7,9 @@ import gitHubLogo from "./images/github.svg";
 
 export function buildHeader() {
   const header = document.createElement('header');
-  const titleButton = document.createElement('button');
-  titleButton.textContent = 'Ursonesca';
-  header.appendChild(titleButton);
-
-  titleButton.addEventListener('click', () => {
-    clearDOM();
-    buildHomePage();
-    document.querySelector('.about-button').classList.remove('active-tab');
-    document.querySelector('.menu-button').classList.remove('active-tab');
-    document.querySelector('.contact-button').classList.remove('active-tab');
-  });
+  const titleH1 = document.createElement('h1');
+  titleH1.textContent = 'Ursonesca';
+  header.appendChild(titleH1);
 
   return header;
 }
@@ -106,4 +98,4 @@ function clearDOM() {
   }
 }
 
-buildHomePage();
+buildAboutPage();

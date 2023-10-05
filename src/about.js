@@ -1,35 +1,30 @@
 import { buildHeader, buildNav, buildFooter } from "./index.js";
+import platesImage from "./images/plates.jpg";
 
 function buildMainAbout() {
   const mainDiv = document.createElement('div');
   mainDiv.classList.add('main');
 
-  const h2 = document.createElement('h2');
-  h2.textContent = 'SERVING GREAT FOOD, FOR GREAT PEOPLE, SINCE 2023.';
-  mainDiv.appendChild(h2);
+  const reviewsDiv = document.createElement('div');
+  reviewsDiv.classList.add('reviews-container');
 
-  const scheduleDiv = document.createElement('div');
-  scheduleDiv.classList.add('schedule-container');
+  const p1 = document.createElement('p');
+  p1.textContent = 'Best restaurant in town - Food Advisor';
+  const p2 = document.createElement('p');
+  p2.textContent = 'The best fucking pizza I\'ve ever had - Gordon Ramsey';
+  const p3 = document.createElement('p');
+  p3.textContent = 'Can\'t wait to have lunch there again - Random Journalist';
 
-  const hoursH3 = document.createElement('h3');
-  hoursH3.textContent = 'Hours';
+  reviewsDiv.appendChild(p1);
+  reviewsDiv.appendChild(p2);
+  reviewsDiv.appendChild(p3);
 
-  const breakfastP = document.createElement('p');
-  breakfastP.textContent = 'Breakfast - from 6:00AM to 9:00AM.';
-  const lunchP = document.createElement('p');
-  lunchP.textContent = 'Lunch - from 10:30AM to 2:00PM.';
-  const dinnerP = document.createElement('p');
-  dinnerP.textContent = 'Dinner - from 7:00PM to 23:30PM.';
-  const weekendsP = document.createElement('p');
-  weekendsP.textContent = 'Weekends - from 6:00AM to 23:30PM.';
+  const HomeImg = document.createElement('img');
+  HomeImg.setAttribute('src', platesImage);
+  HomeImg.setAttribute('alt', 'Ursonesca Restaurant');
 
-  scheduleDiv.appendChild(hoursH3);
-  scheduleDiv.appendChild(breakfastP);
-  scheduleDiv.appendChild(lunchP);
-  scheduleDiv.appendChild(dinnerP);
-  scheduleDiv.appendChild(weekendsP);
-
-  mainDiv.appendChild(scheduleDiv);
+  mainDiv.appendChild(reviewsDiv);
+  mainDiv.appendChild(HomeImg);
 
   return mainDiv;
 }
