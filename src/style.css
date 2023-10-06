@@ -42,7 +42,7 @@ header {
 header > h1 {
   color: var(--text-main);
   font-family: 'PicturamaFounder';
-  font-size: 6rem;
+  font-size: clamp(3rem, 5vw, 8rem);
   font-weight: 100;
   margin: 0;
   padding: 0;
@@ -93,14 +93,14 @@ nav > button:hover {
 }
 
 .main p {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 1.4vw, 2.3rem);
   font-style: italic;
   color: var(--text-secondary);
 }
 
 .main > img {
   border-radius: 100%;
-  width: 30%;
+  width: clamp(200px, 25%, 40%);
   height: auto;
   margin-bottom: 30px;
 }
@@ -126,6 +126,13 @@ nav > button:hover {
 .suggestions-container,
 .address-container {
   text-align: center;
+}
+
+.reservation-container > h2,
+.suggestions-container > h2,
+.address-container > h2{
+  text-align: center;
+  font-size: clamp(1.4rem, 1.4vw, 2.6rem);
 }
 
 .breakfast1,
@@ -184,24 +191,9 @@ nav > button:hover {
   padding: 0;
 }
 
-.breakfast-container p:nth-child(3),
-.lunch-container p:nth-child(3),
-.dinner-container p:nth-child(3) {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  justify-self: start;
-  align-self: start;
-  font-size: 1.2rem;
-  font-weight: 200;
-  margin: 0;
-  padding: 0;
-}
-
-.breakfast-container p:last-child,
-.lunch-container p:last-child,
-.dinner-container p:last-child {
+.breakfast-container p,
+.lunch-container p,
+.dinner-container p {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 3;
@@ -214,13 +206,14 @@ nav > button:hover {
 }
 
 .footer {
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 1.4vw, 1.2rem);
   border-top: solid 2px var(--text-main);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: auto;
+  margin: auto 0 0 0;
+  padding: 0;
   background-color: var(--background-main);
   width: 100%;
 }
