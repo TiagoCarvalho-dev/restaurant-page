@@ -10,9 +10,10 @@
 
 :root {
   font-family: 'Coolvetica';
-  --background-main: rgba(0, 0, 0, 0.849);
+  --background-main: rgba(0, 0, 0, 0.850);
   --text-main: rgb(189, 189, 189);
-  --text-secondary: rgba(223, 190, 0, 0.911);
+  --text-secondary: rgba(223, 190, 0, 0.900);
+  --plates-background: rgba(189, 189, 189, 0.240);
 }
 
 body {
@@ -141,9 +142,14 @@ nav > button:hover {
 .lunch2,
 .dinner1,
 .dinner2 {
-  display: grid;
-  grid-template-columns: 160px 5fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(130px, 20vw, 230px);
+  gap: 1.2rem;
+  border: solid 1px var(--text-main);
+  padding: 1.7rem;
+  background-color: var(--plates-background);
 }
 
 .breakfast-container,
@@ -151,8 +157,18 @@ nav > button:hover {
 .dinner-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
   width: 100%;
+}
+
+.breakfast-plates,
+.lunch-plates,
+.dinner-plates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
 }
 
 .breakfast-container h3,
@@ -165,26 +181,14 @@ nav > button:hover {
 .breakfast-container img,
 .lunch-container img,
 .dinner-container img {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
   border-radius: 100%;
   width: 130px;
   height: 130px;
-  justify-self: center;
-  align-self: center;
 }
 
 .breakfast-container h4,
 .lunch-container h4,
 .dinner-container h4 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  justify-self: start;
-  align-self: end;
   font-size: 1.6rem;
   font-weight: 200;
   margin: 0;
@@ -194,13 +198,7 @@ nav > button:hover {
 .breakfast-container p,
 .lunch-container p,
 .dinner-container p {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  justify-self: center;
-  align-self: end;
-  color: var(--text-main);
+  color: var(--text-secondary);
   margin: 0;
   padding: 0;
 }
