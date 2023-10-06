@@ -1,9 +1,9 @@
-import waffles from "./images/waffles.jpg";
-import pancakes from "./images/pancakes.jpg";
-import hotdog from "./images/hotdog.jpg";
-import pasta from "./images/pasta.jpg";
-import pizza from "./images/pizza.jpg";
-import sandwich from "./images/sandwich.jpg";
+import waffles from "../src/images/waffles.jpg";
+import pancakes from "../src/images/pancakes.jpg";
+import hotdog from "../src/images/hotdog.jpg";
+import pasta from "../src/images/pasta.jpg";
+import pizza from "../src/images/pizza.jpg";
+import sandwich from "../src/images/sandwich.jpg";
 
 export default function buildMainMenu() {
   const mainDiv = document.querySelector('.main');

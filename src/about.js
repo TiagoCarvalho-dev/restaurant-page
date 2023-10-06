@@ -1,4 +1,4 @@
-import platesImage from "./images/plates.jpg";
+import platesImage from "../src/images/plates.jpg";
 
 export default function buildMainAbout() {
   const mainDiv = document.querySelector('.main');

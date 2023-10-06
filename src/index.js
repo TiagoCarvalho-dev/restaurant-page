@@ -2,7 +2,7 @@ import "./style.css";
 import buildMainAbout from "./about.js";
 import buildMainMenu from "./menu.js";
 import buildMainContact from "./contact.js";
-import gitHubLogo from "./images/github.svg";
+import gitHubLogo from "../src/images/github.svg";
 
 function buildHeader() {
   const header = document.createElement('header');
