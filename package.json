@@ -12,7 +12,8 @@
     "server": "webpack serve --open",
     "watch": "webpack --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build": "webpack"
   },
   "author": "Tiago de Siqueira Carvalho",
   "license": "ISC",
